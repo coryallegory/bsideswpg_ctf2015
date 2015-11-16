@@ -14,9 +14,10 @@ Typing up the four strings of characters isn't exactly a trivial task, as the fo
 
 Note: They're all zeros (luckily I assumed any letter O's would probably be rounder than any of the zeros present), and there is an extremely subtle difference between the 1's and l's that can be observed, where the vertical body of number 1's are only slightly thicker than the font's general stroke width.
 
-Otherwise, there's no real reason to expect we'd need four separate strings at this stage, so I appended them into [coindata.txt](coindata.txt).
+Otherwise, there's no real reason to expect we'd need [four separate strings](coinrings.txt) at this stage, so I appended them into [coindata.txt](coindata.txt).
 
 The character set suggests base64 encoding, which can be decoded with
+
 `cat coindata.txt | base64 --decode > decoded`
 
 [The decoded data is a bunch of non-text junk](decoded), no idea what it is. Let's check the hex values for something recognizable.
